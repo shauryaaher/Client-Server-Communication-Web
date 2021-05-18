@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const port = 5000;
 
 const parser = bodyParser.urlencoded({
     extended: true
@@ -14,6 +15,6 @@ app.post("/helloWorld", parser, (request, response) => {
     response.send(`You entered ${request.body.type}.`);
 });
 
-app.listen(5000, () => {
-    console.log("Runnin' on 5000.");
+app.listen(port, () => {
+    console.log(`Runnin' @ ${port}`);
 });
