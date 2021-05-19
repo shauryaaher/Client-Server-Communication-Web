@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const port = 5000;
 
-const parser = bodyParser.urlencoded({
+const parser = express.urlencoded({
     extended: true
 });
 
