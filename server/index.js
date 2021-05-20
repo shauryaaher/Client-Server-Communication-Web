@@ -7,7 +7,7 @@ const parser = express.urlencoded({
 });
 
 app.get('/index', (request, response) => {
-    response.sendFile("c:/Client-Server/client/index.html");
+    response.sendFile("c:/Client-Server-Communication-Web/client/index.html");
 });
 
 app.post("/helloWorld", parser, (request, response) => {  
